@@ -1,5 +1,5 @@
 let url =
-  "http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=LKri6hXvoQfyOCqLABku6i9fOgIokbfC&limit=5";
+  "https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=LKri6hXvoQfyOCqLABku6i9fOgIokbfC&limit=5";
 
 let container = document.querySelector(".container");
 let form = document.querySelector(".form");
@@ -29,7 +29,7 @@ form.addEventListener("click", function (e) {
   let target = e.target;
   let inputText = input.value;
   url =
-    "http://api.giphy.com/v1/gifs/search?q=" +
+    "https://api.giphy.com/v1/gifs/search?q=" +
     inputText.split(" ").join("+") +
     "&api_key=LKri6hXvoQfyOCqLABku6i9fOgIokbfC&limit=5";
   if (target.type == "submit") {
